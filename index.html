@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>云朵桌宠</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-labelledby="app-title">
+      <section class="hero-card">
+        <p class="eyebrow">Browser Desktop Pet</p>
+        <h1 id="app-title">云朵桌宠</h1>
+        <p class="hero-text">
+          一只会撒娇、会打盹、能被拖来拖去的小云朵。点击、投喂或换心情，看看它会怎么回应你。
+        </p>
+        <div class="toolbar" aria-label="桌宠操作">
+          <button id="feedButton" type="button">投喂星星</button>
+          <button id="playButton" type="button">陪它玩</button>
+          <button id="napButton" type="button">哄它睡觉</button>
+          <button id="resetButton" type="button">回到角落</button>
+        </div>
+      </section>
+
+      <section class="status-card" aria-live="polite">
+        <h2>今日状态</h2>
+        <dl>
+          <div>
+            <dt>心情</dt>
+            <dd id="moodLabel">好奇</dd>
+          </div>
+          <div>
+            <dt>能量</dt>
+            <dd><meter id="energyMeter" min="0" max="100" value="72">72</meter></dd>
+          </div>
+          <div>
+            <dt>提示</dt>
+            <dd>可以直接拖动桌宠，也可以双击它换表情。</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <aside id="pet" class="pet curious" role="img" aria-label="一只可互动的云朵桌宠" tabindex="0">
+      <div id="speechBubble" class="speech-bubble">嗨！今天也要元气满满～</div>
+      <div class="pet-shadow" aria-hidden="true"></div>
+      <div class="pet-body" aria-hidden="true">
+        <span class="ear ear-left"></span>
+        <span class="ear ear-right"></span>
+        <span class="face">
+          <span class="eye eye-left"></span>
+          <span class="eye eye-right"></span>
+          <span class="mouth"></span>
+        </span>
+        <span class="blush blush-left"></span>
+        <span class="blush blush-right"></span>
+      </div>
+    </aside>
+
+    <script src="src/pet.js" defer></script>
+  </body>
+</html>

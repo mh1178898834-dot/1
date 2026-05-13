@@ -1,0 +1,16 @@
+{
+  "name": "desktop-pet",
+  "version": "1.0.0",
+  "description": "A cute browser-based desktop pet with moods, dragging, and mini interactions.",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "check": "node --check src/pet.js"
+  },
+  "keywords": [
+    "desktop-pet",
+    "browser",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT"
+}
